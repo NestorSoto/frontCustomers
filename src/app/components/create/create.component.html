@@ -1,0 +1,129 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h2>Creacion de clientes</h2>
+    </div>
+    <div class="card-body">
+      <form class="row g-3" action="">
+        <div class="col-md-12">
+          <label for="inputCompanyName" class="form-label"
+            >Nombre de la companía</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputCompanyName"
+            name="inputCompanyName"
+            [(ngModel)]="customerNew.companyName"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputContactName" class="form-label"
+            >Nombre de contacto</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputContactName"
+            name="inputContactName"
+            [(ngModel)]="customerNew.contactName"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputContactTitle" class="form-label"
+            >Título de contacto</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputContactTitle"
+            name="inputContactTitle"
+            [(ngModel)]="customerNew.contactTitle"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Direccion</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="1234 Main St"
+            name="inputAddress"
+            [(ngModel)]="customerNew.address"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputCountry" class="form-label">Pais</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputCountry"
+            placeholder="Peru"
+            name="inputCountry"
+            [(ngModel)]="customerNew.country"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputCity"
+            name="inputCity"
+            [(ngModel)]="customerNew.city"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="inputRegion" class="form-label">Region</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputRegion"
+            name="inputRegion"
+            [(ngModel)]="customerNew.region"
+          />
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Codigo postal</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inpuCodePostal"
+            name="inpuCodePostal"
+            [(ngModel)]="customerNew.postalCode"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputFax" class="form-label">FAX</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputFax"
+            name="inputFax"
+            [(ngModel)]="customerNew.fax"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPhone" class="form-label">Phone</label>
+          <input
+            type="text"
+            class="form-control"
+            id="inputPhone"
+            name="inputPhone"
+            [(ngModel)]="customerNew.phone"
+          />
+        </div>
+
+        <div class="col-12">
+          <button
+            type="submit"
+            class="btn btn-success"
+            (click)="agregarCustomer()"
+          >
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

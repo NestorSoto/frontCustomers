@@ -1,0 +1,125 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h2>Edicion de clientes</h2>
+    </div>
+    <div class="card-body">
+      <form class="row g-3" action="">
+        <div class="col-md-2">
+          <label for="inputCompanyName" class="form-label">Codigo</label>
+          <input
+            type="text"
+            class="form-control"
+            name="inputCustomerId"
+            [(ngModel)]="customerNew.customerId"
+            disabled
+          />
+        </div>
+        <div class="col-md-10">
+          <label for="inputCompanyName" class="form-label"
+            >Nombre de la companía</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="inputCompanyName"
+            [(ngModel)]="customerNew.companyName"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputContactName" class="form-label"
+            >Nombre de contacto</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="inputContactName"
+            [(ngModel)]="customerNew.contactName"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputContactTitle" class="form-label"
+            >Título de contacto</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            name="inputContactTitle"
+            [(ngModel)]="customerNew.contactTitle"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label">Direccion</label>
+          <input
+            type="text"
+            class="form-control"
+            name="inputAddress"
+            placeholder="1234 Main St"
+            [(ngModel)]="customerNew.address"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputCountry" class="form-label">Pais</label>
+          <input
+            type="text"
+            class="form-control"
+            name="inputCountry"
+            placeholder="Peru"
+            [(ngModel)]="customerNew.country"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label">Ciudad</label>
+          <input
+            type="text"
+            class="form-control"
+            name="inputCity"
+            [(ngModel)]="customerNew.city"
+          />
+        </div>
+        <div class="col-md-4">
+          <label for="inputRegion" class="form-label">Region</label>
+          <input
+            type="text"
+            class="form-control"
+            name="inputRegion"
+            [(ngModel)]="customerNew.region"
+          />
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">Codigo postal</label>
+          <input
+            type="text"
+            class="form-control"
+            name="inpuCodePostal"
+            [(ngModel)]="customerNew.postalCode"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputFax" class="form-label">FAX</label>
+          <input
+            type="text"
+            class="form-control"
+            name="inputFax"
+            [(ngModel)]="customerNew.fax"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPhone" class="form-label">Phone</label>
+          <input
+            type="text"
+            class="form-control"
+            name="inputPhone"
+            [(ngModel)]="customerNew.phone"
+          />
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-success" (click)="guardar()">
+            Save
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
